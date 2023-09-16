@@ -12,4 +12,15 @@ $(function () {
         fade: true,
         autoplay: true
     });
+
+    var mixer = mixitup('.gallery__inner', {
+        load: {
+            filter: '.living'
+        }
+    });
+
 })
+
+Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+});
